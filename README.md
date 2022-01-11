@@ -1,6 +1,6 @@
 # file-locker
 You can lock and unlock folder or a file
-**This is in beta state. Do not lock important files
+**This is in beta state. Do not lock important files**
 
 Installation: 
 ```
