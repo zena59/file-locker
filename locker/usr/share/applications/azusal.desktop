@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=azusal       
-Comment=RUN SYSTEM ANTISYNC
-Exec=/usr/bin/nxyzs.sh
-Icon=/usr/share/icons/syzfrtn.xpm
-Terminal=true
-Type=Application
-Categories=Application;
