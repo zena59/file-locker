@@ -14,7 +14,7 @@ one can change it by browsing to.local/share/appication/azusal7898.desktop
 and changing name = LOC
 !warning do not change name of .desktop file
 
-!Default password = zena
+**!Default password = zena**
 
 
 uninstallation:
