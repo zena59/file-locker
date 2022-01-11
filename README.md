@@ -2,9 +2,9 @@
 can lock and unlock  file called system2
 
 Installation: 
-`cd file-locker`
-`chmod u+x install.sh`
-`./install.sh`
+>cd file-locker|
+>chmod u+x install.sh
+>./install.sh
 
 
 usage:
@@ -17,6 +17,6 @@ and changing name = LOC
 
 
 uninstallation:
-`cd file-locker`
-`chmod u+x install.sh`
-`./uninstall.sh`
+>cd file-locker
+>chmod u+x install.sh
+>./uninstall.sh
