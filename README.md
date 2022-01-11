@@ -1,5 +1,6 @@
 # file-locker
-can lock and unlock  file called system2
+You can lock and unlock folder or a file
+**This is in beta state. Do not lock important files
 
 Installation: 
 ```
