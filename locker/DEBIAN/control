@@ -1,9 +1,0 @@
-Package: locker
-Version: 1.0
-Section: custom
-Priority: optional
-Architecture: all
-Essential: no
-Installed-Size: 1324
-Maintainer: zen
-Description: Locks a folder and also unlockes it
