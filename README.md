@@ -3,6 +3,7 @@ can lock and unlock  file called system2
 
 Installation: 
 ```
+git clone https://github.com/zena59/file-locker.git
 cd file-locker
 chmod u+x install.sh
 ./install.sh
