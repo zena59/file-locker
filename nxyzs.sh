@@ -98,6 +98,7 @@ else
 			{
 				touch .local/share/.znxyzs/.nxyzd.txt
 				echo "$filename" >> .local/share/.znxyzs/.nxyzd.txt
+				clear
 			}
 			else
 			{
@@ -112,6 +113,7 @@ else
 				mkdir $filename
 				echo "$filename" >> .local/share/.znxyzs/.nxyzd.txt
 				echo "$filename folder has been created! (≧▽≦)"
+				clear
 			}
 		fi
 	
@@ -119,14 +121,14 @@ else
 fi
 
 
-X="lock"
-Y="unlock"
+X="l"
+Y="u"
 #Z="delete-folder"
-T="change-password"
+T="cp"
 R="reset"
 value=`cat .local/share/.znxyzs/.nxyzd.txt`
 lock_dir=".local/share/.nxyz6798"
-bye="exit"
+bye="e"
 
 
 
@@ -137,12 +139,12 @@ do
 {
 
 
-echo -e "\nEnter the operaton:
-       lock
-       unlock
-       change-password
+echo -e "\nEnter the operaton: (type only letter)
+       l-lock
+       u-unlock
+       cp-change-password
        \e[31mreset\e[0m
-       exit\n"
+       e-exit\n"
 
 read C
 
@@ -152,6 +154,7 @@ if [ $C = $X ]; then
 	{
 	if [ -e $lock_dir ]; then
 		{
+		clear
 		echo -e "\n\e[33mFolder is already locked! \e[0m \n"
 		}
 	else
@@ -159,6 +162,7 @@ if [ $C = $X ]; then
 		mv /home/$USER/$value /home/$USER/.local/share/.nxyz6798
 		sudo chmod 700 .local/share/.nxyz6798
 		sudo chown root:root .local/share/.nxyz6798
+		clear
 		echo -e "\n\e[32mFolder has been locked! (✷‿✷)\e[0m \n"
 		}
 	fi
@@ -171,10 +175,12 @@ elif [ $C = $Y ]; then
 		sudo chmod 777 .local/share/.nxyz6798
 		sudo chown $SUDO_USER:$SUDO_USER .local/share/.nxyz6798
 		mv /home/$USER/.local/share/.nxyz6798 /home/$USER/$value
+		clear
 		echo -e "\n\e[32mFolder has been unlocked! (☉ ｡☉)! \e[0m \n"
 		} 
 	else
 		{
+		clear
 		echo -e "\n\e[33mFolder is already unlocked! \e[0m \n"  
 		}
 	fi
@@ -215,6 +221,7 @@ elif [ $C = $T ]; then
 		echo -e "$new_pass" >> .local/share/.znxyzs/.owo.txt
 		sudo chmod 700 .local/share/.znxyzs/.owo.txt
 		sudo chown root:root .local/share/.znxyzs/.owo.txt
+		clear
 		echo -e "\n\e[32mPassword has been changed\e[0m\n"
 	}
 	
@@ -256,6 +263,7 @@ Locked folders will be unlocked and password will be changed to default\n"
 		}
 	else
 		{
+		clear
 		echo -e "\n\e[31mReset cancelled\e[0m"
 		}
 	fi
@@ -266,8 +274,11 @@ elif [ $C = $bye ]; then
 	exit
 	}
 	
-else
+else	
+	{
+	clear
 	echo -e "\nWhat the hell did you enter?! (-_-)\n"
+	}
 fi
 }
 done
