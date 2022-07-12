@@ -12,9 +12,10 @@ chmod u+x install.sh
 
 usage:
 
-desktop icon is named as LOC
+desktop icon is named as LOC. 
 one can change it by browsing to.local/share/appication/azusal7898.desktop
 and change the name = LOC
+
 !warning do not change name of .desktop file
 
 **!Default password = zena**
